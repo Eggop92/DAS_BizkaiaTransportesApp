@@ -1,0 +1,11 @@
+Proyecto BizkaiaTransportesApp.
+
+Proyecto para la asignatura de Desarrollo Avanzado de Software del grado en ingeniería informática de gestión y sistemas de información de la escuela universitaria de ingeniería técnica industrial de Bilbao.
+
+Lenguajes:
+Android
+PHP
+MySQL
+
+Autores:
+Egoitz Puerta
