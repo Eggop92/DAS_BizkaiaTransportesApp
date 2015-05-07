@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eggop.DAS.bizkaiatransportesapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+	
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GETACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="eggop.DAS.bizkaiatransportesapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="eggop.DAS.bizkaiatransportesapp.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDmaiAwAQfdJ95FUFVLND9gerOy2jb6cCE" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name="eggop.DAS.bizkaiatransportesapp.RecibidorDeSenales" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="eggop.DAS.bizkaiatransportesapp.Widget"
+            android:label="@string/title_widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="eggop.DAS.bizkaiatransportesapp.WidgetConfiguracion" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget" />
+        </receiver>
+        <receiver
+            android:name="eggop.DAS.bizkaiatransportesapp.RecibidorGCM"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="eggop.DAS.bizkaiatransportesapp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="eggop.DAS.bizkaiatransportesapp.ServicioDetectarProximidad" />
+        <service android:name="eggop.DAS.bizkaiatransportesapp.ServicioGCM" />
+
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.MainMenu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.VerLineas"
+            android:label="@string/title_activity_ver_lineas" >
+        </activity>
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.DetallesLineaActivity"
+            android:label="@string/title_activity_detalles_linea" >
+        </activity>
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.PreferencesActivity"
+            android:label="@string/title_activity_preferences" >
+        </activity>
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.WidgetConfiguracion"
+            android:label="@string/title_activity_widget_configuracion" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="eggop.DAS.bizkaiatransportesapp.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+    </application>
+
+</manifest>

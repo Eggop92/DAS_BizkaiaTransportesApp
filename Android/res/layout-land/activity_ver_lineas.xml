@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerLineas" >
+
+    <fragment
+        android:id="@+id/fragmentVerLineasLista"
+        android:name="eggop.DAS.bizkaiatransportesapp.ListaLineasFragment"
+        android:layout_width="202dp"
+        android:layout_height="match_parent" />
+
+    <fragment
+        android:id="@+id/fragmentVerLineasDetalles"
+        android:name="eggop.DAS.bizkaiatransportesapp.DetallesLínea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fragmentVerLineasLista" />
+
+</RelativeLayout>

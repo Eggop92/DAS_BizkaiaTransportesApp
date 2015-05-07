@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BizkaiaTransportesApp</string>
+    <string name="action_settings">Idioma</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_boton_ver">Ver lista de lineas y paradas</string>
+    <string name="menu_boton_marcar">Marcar lineas favoritas</string>
+    <string name="menu_boton_destino">¿Que línea debería de coger?</string>
+    <string name="title_activity_ver_lineas">VerLineas</string>
+    <string name="title_activity_detalles_linea">DetallesLineaActivity</string>
+    <string name="linea_de">Linea De </string>
+    <string name="frequencia">Frecuencia: </string>
+    <string name="metro"> metro </string>
+    <string name="bus"> autobús </string>
+    <string name="tren"> tren </string>
+    <string name="switch_titulo">Favorita </string>
+    <string name="switch_on">Si</string>
+    <string name="switch_off">No</string>
+    <string name="parada">Parada  </string>
+    <string name="cerca">  cerca </string>
+    <string name="linea">  linea </string>
+    <string name="min">min</string>
+    <string name="tituloNotific">Parada cercana</string>
+    <string name="title_activity_preferences">Opciones</string>
+    <string name="seleciona_idioma">Selecciona un idioma</string>
+    <string name="cambia_idioma">Cambia el idioma de la aplicación</string>
+    <string name="idioma">Idioma</string>
+    <string name="lanzarServicio">Lanza el servicio</string>
+    <string name="masLineas">Cargar mas lineas</string>
+    <string name="title_widget">Paradas cercanas</string>
+    <string name="title_activity_widget_configuracion">WidgetConfiguracion</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="actualizando">Actualizando</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BizkaiaTransportesApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="menu_boton_ver">See lines and stations</string>
+    <string name="menu_boton_marcar">Favourite lines</string>
+    <string name="menu_boton_destino">Which line i shoud pick?</string>
+    <string name="linea_de">Line of </string>
+    <string name="frequencia">Frequence: </string>
+    <string name="metro"> metro </string>
+    <string name="bus"> bus </string>
+    <string name="tren"> train </string>
+    <string name="switch_titulo">Favorite </string>
+    <string name="switch_on">Yes</string>
+    <string name="switch_off">No</string>
+    <string name="parada">Station </string>
+    <string name="cerca"> are close </string>
+    <string name="linea"> line </string>
+    <string name="min">min</string>
+    <string name="tituloNotific">Close station</string>
+    <string name="title_activity_preferences">Settings</string>
+    <string name="seleciona_idioma">Select lenguage</string>
+    <string name="cambia_idioma">Change application lenguage</string>
+    <string name="idioma">Lenguage</string>
+    <string name="lanzarServicio">Launch the service</string>
+    <string name="masLineas">Load more lines</string>
+    <string name="title_widget">Paradas cercanas</string>
+    
+    
+</resources>
